@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST" id="jobAppForm">
+        <div class="wrapper">
+            <div class="redDiv"></div>
+            <div class="wrapper2">
+                <h1 class="title"> Job Application </h1>
+                <h3 class="titleRed">Personal Information</h2>
+                    <!-- Grid with 3 column -->
+                    <div class="grid3">
+                        <label><strong>Name</strong> </label>
+                        <input class="roundBorders" type="text" name="FirstName" id="FirstName" required>
+                        <input class="roundBorders" type="text" name="LastName" id="LastName" required>
+                        <div></div>
+                        <label class="smallNameLabel" for="FirstName"><small> First Name</small></label>
+                        <label class="smallNameLabel" for="LastName"><small>Last Name </small></label>
+                    </div> <br>
+                    <!-- Grid with 2 column -->
+                    <div class="grid2">
+                        <!-- Email -->
+                        <label for="email">Email</label>
+                        <input class="roundBorders" type="email" name="email" id="email" placeholder="user@example.com">
+                        <!-- Education dropdown list -->
+                        <label for="education"> Education</label>
+                        <div>
+                            <select class="dropdownBorder" name="education" id="education">
+                                <option value="Please choose">Please Choose</option>
+                                <option value="ColegeDegree">Colege Degree</option>
+                                <option value="FacultyDegree">Faculty Degree</option>
+                                <option value="MasterDegree">Master Degree</option>
+                                <option value="Doctor">Doctor</option>
+                            </select>
+                        </div>
+                        <!-- Resume file upload -->
+                        <label>Resume</label>
+                        <input type="file" name="fileUpload" id="fileUpload">
+                    </div> <br>
+                    <!-- Address -->
+                    <div class="gridAddress">
+                        <label id="addressRow1">Address</label>
+
+                        <input type="text" name="Address1" id="Address1" class="roundBorders">
+                        <label class="smallLabel" for="Address1"><small>Address1</small></label>
+                        <input type="text" name="Address2" id="Address2" class="roundBorders">
+                        <label class="smallLabel" for="Address2"><small>Address2</small></label>
+
+                        <div>
+                            <select class="dropdownBorder" name="country" id="country">
+                                <option value="Please choose">Please Choose</option>
+                                <option value="Macedonia">Macedonia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Spain">Spain</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </div>
+                        <label class="smallLabel" for="country"><small>Country</small> </label>
+                        <div class="gridAddressCity">
+                            <input type="text" name="city" id="city" class="roundBorders">
+                            <input type="text" name="state" id="state" class="roundBorders">
+                            <input type="text" name="zipCode" id="zipCode" class="roundBorders">
+
+                            <label class="smallLabel" for="Address2"><small>City</small></label>
+                            <label class="smallLabel" for="Address2"><small>State</small></label>
+                            <label class="smallLabel" for="Address2"><small>Zip Code</small></label>
+                        </div>
+                    </div> <br><br>
+                    <!-- Phone number and hoobies -->
+                    <div class="grid2">
+                        <label for="phoneNumber"> Phone Number</label>
+                        <div class="gridPhoneNumber">
+                            <input class="roundBorders" type="text">
+                            <input class="roundBorders" type="text">
+                        </div>
+                    </div> <br>
+                    <!-- Hobbies -->
+                    <div class="grid2 ">
+                        <label class="colSpan2" for="hobbies"> What are your hobbies ?</label>
+                        <input class=" roundBorders colSpan2 marginUp10" type="text">
+                    </div>
+                    <!-- Current Employement  -->
+                    <h3 class="titleRed"> Precious/Current Employment Details</h3>
+                    <div class="grid2 ">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" name="companyName" id="companyName" class="roundBorders">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" name="jobTitle" id="jobTitle" class="roundBorders">
+                        <label class="rowSpan2" for="howLongHere">How long were you here ?</label>
+                        <input type="text" name="howLongHere" id="howLongHere" class="roundBorders">
+                    </div>
+                    <!-- Reference 1 -->
+                    <h3 class="titleRed"> Reference #1</h3>
+                    <div class="grid2 ">
+                        <label for="nameRef1">Name</label>
+                        <input type="text" name="nameRef1" id="nameRef1" class="roundBorders">
+                        <label for="phoneRef1">Phone</label>
+                        <input type="tel" name="phoneRef1" id="phoneRef1" class="roundBorders">
+                    </div>
+                    <!-- Reference 1 -->
+                    <h3 class="titleRed"> Reference #2</h3>
+                    <div class="grid2 ">
+                        <label for="nameRef2">Name</label>
+                        <input type="text" name="nameRef2" id="nameRef2" class="roundBorders">
+                        <label for="phoneRef2">Phone</label>
+                        <input type="tel" name="phoneRef2" id="phoneRef2" class="roundBorders">
+                    </div><br>
+                    <input class="btnApply roundBorders" type="submit" value="Apply" id="btn">
+            </div>
+            
+
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
